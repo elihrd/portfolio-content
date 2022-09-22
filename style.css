@@ -1,0 +1,29 @@
+header{padding: 10px 10px;}
+
+nav li{
+	background-color: #faf1a4;
+	padding:10px;
+	width:25%;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
+}
+
+h1{font-style: "Helvetica", sans-serif;}
+
+h3{font-style: "Helvetica", sans-serif;}
+
+h4{font-style: "Helvetica", sans-serif;}
+
+p{font-style: "Helvetica", sans-serif;}
+
+main{
+    background-color: mistyrose;
+}
+footer {
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid goldenrod;
+}
