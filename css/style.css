@@ -23,8 +23,8 @@ header a:active {text-decoration: none; color:#7f3186}
 	animation-name: exterior_store;
 	animation-duration: 3s;}
 
-/*.skip a{
-	background: white;
+.skip a{
+	background: #f8e965;
 	left: 0;
 	padding: 6px;
 	-webkit-transition: top 1s ease-out;
@@ -35,16 +35,17 @@ header a:active {text-decoration: none; color:#7f3186}
 	left: -500px;
 	}
 .skip a:focus{
-	background: white;
+	background: #f8e965;
 	top: 0;
 	left: 0;
 	padding: 6px;
 	z-index: 1;
 	position: absolute;
 	}
+
 *:focus {
 	border: 2px solid #4b1a50;
-	}*/
+	}
 
 nav{
 	width:100%;
