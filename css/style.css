@@ -88,9 +88,9 @@ figcaption {text-align:center; font-family: Lora, "Helvetica", sans-serif;}
 
 /*blog page formatting*/
 .fa-solid{
-	font-size: 40px;
-	padding: 5%;
-	color: rgb(55, 30, 63)}
+	font-size: 32px;
+	padding: 2%;
+	color: rgb(65, 20, 80)}
 
 .blog_pic {width: 100%}
 
@@ -98,9 +98,7 @@ figcaption {text-align:center; font-family: Lora, "Helvetica", sans-serif;}
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;}
-/* .left_content{
-	width: 100%
-} */
+
 .ingredients_list{
 	padding-left: 30px;
 	list-style-type: disc;}
