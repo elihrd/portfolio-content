@@ -1,42 +1,95 @@
-#wrapper {max-width:100%;background-color:#fadcfa;margin-left:auto;margin-right:auto;}
-header{padding: 5px 5px; margin: auto;}
+body {max-width:100%; background-color:#fadcfa;margin-left:auto; margin-right:auto;}
+header{padding: 5px 5px; margin: auto; background-image: url('../images/background_image.png'); border: 3px solid #b785d8}
 header a {padding:10px; display: block; text-align: center; margin: 0 auto;}
-header a:hover {text-decoration: none; color:#b785d8; background-color: #f8e965}
-header a:active {text-decoration: none; color:#523963}
 header a:link {text-decoration: none; color: #000000;}
+header a:visited {text-decoration: none; color: #000000;}
+header a:hover {text-decoration: none; color:#b785d8; background-color: #f8e965}
+header a:active {text-decoration: none; color:#7f3186}
+
+/*.skip a{
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -40px;
+	left: -500px;
+	}
+.skip a:focus{
+	background: white;
+	top: 0;
+	left: 0;
+	padding: 6px;
+	z-index: 1;
+	position: absolute;
+	}
+*:focus {
+	border: 2px solid #4b1a50;
+	}*/
 
 nav{
 	width:100%;
-	margin-top:30px;
-	margin-bottom:30px;
-	font-size: 20px;
-	display: inline-block;
+	margin: 0 auto;
+	font-size: 12px;
 }
-ul {margin-left:5px; padding-left:0; font-family: Lora, "Helvetica", sans-serif;}
+.nav_links{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;}
+/*nav {width:100%; margin: 0 auto; margin-top:30px; margin-bottom:30px;font-size: 20px;}*/
+
+ul {margin-left:0px; padding-left:0; font-family: Lora, "Helvetica", sans-serif; } /*margin-left and padding-left properties overwrite default bullet points and padding*/
 nav li{
 	background-color: #faf1a4;
 	padding: 10px;
 	display: inline-block;
 	width: 15%;
 	border: #faf1a4;
-	margin: 0 auto;
+	margin-left: 0 auto;
 }
 
-h1{font-family: Lora, "Helvetica", sans-serif; font-weight: 700; margin: 5px;}
-h3{font-family: Lora, "Helvetica", sans-serif; font-weight: 550; margin: 5px;}
-h4{font-family: Lora, "Helvetica", sans-serif; font-weight: 500; margin: 5px;}
+h1{font-family: Lora, "Helvetica", sans-serif; font-weight: bold; margin: 5px;}
+h3{font-family: Lora, "Helvetica", sans-serif; font-weight: bold; margin: 5px;}
+h4{font-family: Lora, "Helvetica", sans-serif; font-weight: bold; margin: 5px;}
 p{font-family: Lora, "Helvetica", sans-serif; margin: 5px}
 
-
+/*homepage formatting*/
+.exterior_store {width:550px; height: 450px; border: 5px solid #d996e2;}
 
 /*product page formatting*/
-figure {display: inline-block;}
+/*figure {display: inline-block;}*/
+.gallery{display: flex;
+flex-wrap: wrap;
+justify-content: center;}
 figcaption {text-align:center; font-family: Lora, "Helvetica", sans-serif;}
-.product_group {margin:0 auto;margin-bottom:60px; overflow: hidden;}
+.product_figure{padding: 5px;}
+.product {width: 400px; height: 500px;}
+.product:hover {opacity: 70%;}
+
+/*blog page formatting*/
+.cupcake_counter {width: 600px; height: 400px; display: center;}
+.fa-solid{
+	font-size: 32px;
+	padding: 5%;
+	color: rgb(55, 30, 63)}
+
+.aside{
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr;}
+/* .left_content{
+	width: 100%
+} */
+.ingredients_list{
+	padding-left: 30px;
+	list-style-type: disc;}
 
 /*images formatting*/
-img {margin: 5px; padding: 0px 20px; width:400px; height: 500px;}
-img:hover {opacity: 70%; }
+img {margin: 5px; padding: 0px 5px;}
+/*img:hover {opacity: 70%;}*/
 
 footer {
 	width: 100%;
@@ -48,3 +101,16 @@ footer {
 	text-align: center;
 	font-family: "Helvetica", sans-serif;
 }
+
+@media screen and (min-width: 768px)
+{
+	.aside_main{
+		display: grid;
+		grid-template-columns: 1fr 1fr;}
+}
+
+/*.nav_links
+	{display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;}*/

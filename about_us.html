@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D7HN7NMD5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D7HN7NMD5W');
+</script>
         <title>The Bakery Around the Corner</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
         <link rel="icon" href="images/favicon_cupcake_image.webp">
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/style.css">
@@ -17,21 +27,36 @@
             Skip to content
           </a>
         <nav>
-            <ul>
+            <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Online Bakery</a></li>
-                <li><a href="about_us.html">Our Story</a></li>
+                <li><a class= "current" href="about_us.html">Our Story</a></li>
                 <li><a href="blog.html">Our Blog</a></li>
               </ul>
             </nav>
     </header>
     <main>
-        <img src ="images/front_counter.jpeg" alt ="The front counter">
+        <img src ="images/front_counter.jpeg" alt ="The front counter" class="front_counter">
         <h1>Welcome to The Bakery Around the Corner!</h1>
         <p>What started as a conversation between two friends quickly became The Bakery Around the Corner!<br> We hope to make delicious treats that make you feel all the warm and fuzzies.<br> While we only offer cupcakes for now, we're planning on extending our offerings in the future to include cakes, pies, and other delicious pastries!</p>
         <h3>Our Ingredients</h3>
         <p>Since we're a local store, we want to make sure our prodcuts are made with the freshest ingredients available. We source our products from local farms around Michigan to ensure the tastiest products available. Check out our partnership with Blake Farms in Armada, MI to learn about the produce we source from right here in MI!</p>
     </main>
+    <form
+  action="https://formspree.io/f/mqkjgwnr"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     <footer>
         Coded in HTML
         </footer>
