@@ -79,6 +79,7 @@ p{font-family: Lora, "Helvetica", sans-serif; margin: 5px}
 
 /*product page formatting*/
 /*figure {display: inline-block;}*/
+.bakery_title{text-align: center;}
 .gallery{display: flex;
 flex-wrap: wrap;
 justify-content: center;}
@@ -125,6 +126,7 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;}
 }
+.bakery_title{text-align: center;}
 
 /*.nav_links
 	{display: flex;
