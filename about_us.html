@@ -33,30 +33,49 @@
               </ul>
             </nav>
     </header>
-    <main>
-        <img src ="images/front_counter.jpeg" alt ="The front counter" class="front_counter">
+    <main id="main" main class="aside_main">
+      <aside>
+        <img src ="images/front_counter.jpeg" alt ="The front counter" class="front_counter"></aside>
+        <div id="qanda">
         <h1>Welcome to The Bakery Around the Corner!</h1>
-        <p>What started as a conversation between two friends quickly became The Bakery Around the Corner!<br> We hope to make delicious treats that make you feel all the warm and fuzzies.<br> While we only offer cupcakes for now, we're planning on extending our offerings in the future to include cakes, pies, and other delicious pastries!</p>
-        <h2>Our Ingredients</h2>
-        <p>Since we're a local store, we want to make sure our prodcuts are made with the freshest ingredients available. We source our products from local farms around Michigan to ensure the tastiest products available. Check out our partnership with Blake Farms in Armada, MI to learn about the produce we source from right here in MI!</p>
-    </main>
-    <form
+        <p>What started as a conversation between two friends quickly became The Bakery Around the Corner!<br>
+        We hope to make delicious treats that make you feel all the warm and fuzzies.<br>
+        We're constantly experimenting with new flavor combos, so be sure to check back for updates on our store page! <br>
+        While we only offer cupcakes for now, we're planning on extending our offerings in the future to include cakes, pies, and other delicious pastries!</p>
+        <h2>Common Q&A</h2>
+        <button class="accordion">Do you have vegan baked goods?</button>
+        <div class="panel">
+        <p>Currently, we only sell non-vegan goods. However, we're perfecting vegan versions of some of our bestsellers! Stay tuned. </p>
+        </div>
+        <button class="accordion">What about gluten free options?</button>
+        <div class="panel">
+        <p>Yes! We're happy to say our double chocolate, peanut butter, and key lime cupcakes have gluten free options. <br>
+        If you're interested in making an order, please call 310-555-6666!</p>
+        </div>
+        <script src="js/project_java"></script>
+        <!-- <h3>Do you have vegan baked goods?</h3>
+        <p>Currently, we only sell non-vegan goods. However, we're perfecting vegan versions of some of our bestsellers! Stay tuned. </p>
+        <h3>What about gluten free options? </h3>
+        <p>Yes! We're happy to say our double chocolate, peanut butter, and key lime cupcakes have gluten free options. If you're interested in making an order, please call 310-555-6666!</p> -->
+        <form
   action="https://formspree.io/f/mqkjgwnr"
-  method="POST"
->
-  <label>
+  method="POST">
+
+  <label class="label">
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" class="email">
   </label>
-  <label>
+  <label class="label">
     Your message:
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <button type="submit" class="submit">Send</button>
 </form>
+      </div>
+      </main>
     <footer>
-        Coded in HTML
+        @Bakery Around the Corner 2022
         </footer>
     </div>
 </body>

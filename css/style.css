@@ -72,10 +72,19 @@ nav li{
 h1{font-family: Lora, "Helvetica", sans-serif; font-size: 32px; margin: 5px;}
 h2{font-family: Lora, "Helvetica", sans-serif; font-size: 22px; margin: 5px;}
 h3{font-family: Lora, "Helvetica", sans-serif; font-size: 20px; margin: 5px;}
-p{font-family: Lora, "Helvetica", sans-serif; font-size: 15px; margin: 5px}
+p{font-family: Lora, "Helvetica", sans-serif; font-size: 15px; margin: 5px; line-height: 30px;}
+
+.current{background-color: #f8e965; border: 2px solid #702779;}
 
 /*homepage formatting*/
-.exterior_store {width:550px; height: 450px;}
+.exterior_store{width: 100%; height: auto;}
+
+.aside{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;}
+
+.right_content{margin-top: 10px;margin-left: 15px;}
 
 /*product page formatting*/
 /*figure {display: inline-block;}*/
@@ -83,10 +92,62 @@ p{font-family: Lora, "Helvetica", sans-serif; font-size: 15px; margin: 5px}
 .gallery{display: flex;
 flex-wrap: wrap;
 justify-content: center;}
-figcaption {text-align:center; font-family: Lora, "Helvetica", sans-serif;}
+figcaption {text-align: center; font-family: Lora, "Helvetica", sans-serif;}
 .product_figure{padding: 5px;}
 .product {width: 400px; height: 500px;}
 .product:hover {opacity: 70%;}
+
+/*about us page formatting*/
+.label{
+	font-family:Lora, "Helvetica", sans-serif; font-size: 15px;}
+.aside{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion{
+	background-color: #f8e965;
+	color:#000000;
+	cursor: pointer;
+	margin:10px;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-family: Lora, "Helvetica", sans-serif;
+	font-size: 15px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion1:hover {
+	background-color: #e9c03a;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: #fdc6f6;
+	display: none;
+	overflow: hidden;
+	margin:10px;
+	font-family: Lora, "Helvetica", sans-serif;
+	font-size: 12px;
+  }
+
+  .accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+  }
+
+	.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
 
 /*blog page formatting*/
 .fa-solid{
@@ -106,30 +167,38 @@ figcaption {text-align:center; font-family: Lora, "Helvetica", sans-serif;}
 	list-style-type: disc;}
 
 /*images formatting*/
-img {margin: 5px; padding: 0px 5px;}
+img {width:100%; height:auto;}
 /*img:hover {opacity: 70%;}*/
 
 footer {
-	width: 100%;
-	height: 100%;
+	height: auto;
 	padding: 10px;
-	margin: auto;
+	/*margin: auto;*/
 	border: 1px solid rgb(235, 200, 114);
     background-color: rgb(235, 200, 114);
 	text-align: center;
-	font-family: "Helvetica", sans-serif;
+	font-family: Lora, "Helvetica", sans-serif;
 }
+
 
 @media screen and (min-width: 768px)
 {
 	.aside_main{
 		display: grid;
 		grid-template-columns: 1fr 1fr;}
-}
-.bakery_title{text-align: center;}
+	.nav_links
+		{display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: center;
+		padding-top: 45px;}
+	header {margin: auto; height: 150px;}
+	}
 
-/*.nav_links
-	{display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;}*/
+
+
+@media screen and (min-width: 1000px)
+{	.aside_main
+	{display: grid;
+	grid-template-columns: 700px 1fr 200px;}
+}
